@@ -16,3 +16,4 @@ def primos(numero):
     return lista_primos
 
 print(es_primo(7))
+print(primos(7))
