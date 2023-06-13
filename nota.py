@@ -5,3 +5,12 @@ def es_primo(numero):
         if numero % i == 0:
             return False
     return True
+
+def primos(numero):
+    lista_primos = []
+    for i in range(1,numero):
+        if es_primo(i):
+            lista_primos.append(i)
+        else:
+            pass
+    return lista_primos
