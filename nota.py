@@ -14,3 +14,5 @@ def primos(numero):
         else:
             pass
     return lista_primos
+
+print(es_primo(7))
