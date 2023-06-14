@@ -13,3 +13,11 @@ class Numero():
             return False
         else:
             return True
+
+    def es_primo(self):
+        if self.numero < 2:
+            return False
+        for i in range(2, int(self.numero ** 0.5) + 1):
+            if self.numero % i == 0:
+                return False
+        return True
