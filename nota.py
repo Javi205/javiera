@@ -26,3 +26,20 @@ elif a == "segunda":
 else:
     print(es_primo(dato))
     print(primos(dato))
+
+
+def des_prima(numero):
+    factores_primos = []
+    
+    if es_primo(numero):
+        factores_primos.append(numero)
+        return factores_primos
+    
+    primos_menores = primos(numero)
+    for primo in primos_menores:
+        while numero % primo == 0:
+            numero = numero // primo
+            factores_primos.append(primo)
+    
+    return factores_primos
+
