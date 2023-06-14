@@ -21,3 +21,17 @@ class Numero():
             if self.numero % i == 0:
                 return False
         return True
+    
+    def es_compuesto(self):
+        if self.numero < 2:
+            return False
+        for i in range(2, int(self.numero ** 0.5) + 1):
+            if self.numero % i == 0:
+                return True
+        return False
+    
+a = Numero(10)
+print(a.es_impar())
+print(a.es_par())
+print(a.es_primo())
+print(a.es_compuesto())
